@@ -30,8 +30,9 @@ namespace BasicCoreProblems
                         break;
 
                     case 4:
-                        Basicprograms sum = new Basicprograms();
-                        sum.Harmonic();
+                        Basicprograms basicPrograms = new Basicprograms();
+                        basicPrograms.Prime();
+
                         break;
 
                     case 5:
