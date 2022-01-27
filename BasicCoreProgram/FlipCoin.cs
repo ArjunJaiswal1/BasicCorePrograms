@@ -46,6 +46,12 @@ namespace BasicCoreProgram
                 Console.WriteLine("{0} is not a Leap Year", year);
             }
         }
+
+        internal void Harmonic()
+        {
+            throw new NotImplementedException();
+        }
+
         public void PowerOfTwo()
         {
             Console.WriteLine("Enter the power value");
@@ -55,7 +61,29 @@ namespace BasicCoreProgram
                 Console.WriteLine("2^{0} " + " " + "= {1}", i, Math.Pow(2, i));
             }
         }
+        public void Prime()
+        {
+            Console.WriteLine("Enter a Number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            for (int i = 1; i <= num; i++)
+            {
+                if (num % i == 0)
+                {
+                    count++;
+                }
+            }
+            if (count == 2)
+            {
+                Console.WriteLine(num + " is a Prime number");
+            }
+            else
+            {
+                Console.WriteLine(num + " is not a Prime number");
+            }
+        }
     }
 }
+
 
 

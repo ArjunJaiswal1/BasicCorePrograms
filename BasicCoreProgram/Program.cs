@@ -6,7 +6,7 @@ namespace BasicCoreProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear\n 3. PowOfTwo\n 4. Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear\n 3. PowOfTwo\n 4. Primefactor\n 5. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
@@ -30,6 +30,11 @@ namespace BasicCoreProblems
                         break;
 
                     case 4:
+                        Basicprograms sum = new Basicprograms();
+                        sum.Harmonic();
+                        break;
+
+                    case 5:
                         flag = false;
                         break;
                 }
